@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://kw2qxtuneaex"]
+
+[ext_resource type="Shader" uid="uid://bodm4noloveyj" path="res://shaders/skybox.gdshader" id="1_72ix8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qmghv"]
+shader = ExtResource("1_72ix8")
+shader_parameter/sky_color = Color(0.03, 0.05, 0.11, 1)
+shader_parameter/star_base_color = Color(0.8, 1, 0.3, 1)
+shader_parameter/star_hue_offset = 0.6
+shader_parameter/star_intensity = 0.08
+shader_parameter/star_twinkle_speed = 0.8
+shader_parameter/star_twinkle_intensity = 0.2
+shader_parameter/layer_scale = 20.0
+shader_parameter/layer_scale_step = 10.0
+shader_parameter/layers_count = 3
+
+[sub_resource type="Sky" id="Sky_2vj2h"]
+sky_material = SubResource("ShaderMaterial_qmghv")
+
+[sub_resource type="Environment" id="Environment_y0acb"]
+background_mode = 2
+sky = SubResource("Sky_2vj2h")
+glow_enabled = true
+
+[node name="main" type="Node3D" unique_id=699405101]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=905390659]
+environment = SubResource("Environment_y0acb")

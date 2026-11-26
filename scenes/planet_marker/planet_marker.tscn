@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dpmqmvw5isfmy"]
+
+[ext_resource type="Script" uid="uid://chj0b6wretsni" path="res://scenes/planet_marker/planet_marker.gd" id="1_kafv3"]
+
+[node name="planet_marker" type="Marker3D" unique_id=719704730]
+script = ExtResource("1_kafv3")
