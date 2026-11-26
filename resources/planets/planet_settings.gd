@@ -18,7 +18,7 @@ class_name PlanetSettings
 		mountain_height = v
 		emit_changed()
 
-@export var mountain_exponent: float = 2.5:
+@export var mountain_exponent: float = 0.75:
 	set(v):
 		mountain_exponent = v
 		emit_changed()
@@ -30,6 +30,12 @@ class_name PlanetSettings
 		if terrain_noise and not terrain_noise.changed.is_connected(emit_changed):
 			terrain_noise.changed.connect(emit_changed)
 		emit_changed()
+
+@export var terrain_scale:float = 35.0:
+	set(v):
+		terrain_scale = v
+		emit_changed()
+
 
 @export_group("Continents")
 @export var continent_mask: FastNoiseLite = FastNoiseLite.new():

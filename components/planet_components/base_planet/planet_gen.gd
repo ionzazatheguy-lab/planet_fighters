@@ -64,13 +64,9 @@ func get_surface_point(dir:Vector3):
 		mask_level = pow(mask_level, settings.mask_sharpness)
 		
 		
-		var raw_noise: float = settings.terrain_noise.get_noise_3dv(dir * 100.0)
+		var raw_noise: float = settings.terrain_noise.get_noise_3dv(dir * 35.0)#lower the no. lwer will be the peak
 		var height_level: float = 1.0 - abs(raw_noise)
-		height_level = pow(height_level, 3.0)
-		
-		
-		# Raising the height to a power curves the data. 
-		# Low/mid values get squashed, high values stay high.
+	
 		height_level = pow(height_level, settings.mountain_exponent) 
 		
 	
