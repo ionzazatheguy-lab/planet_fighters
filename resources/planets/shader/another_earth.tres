@@ -1,0 +1,29 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://c4fuqj5yiqy2o"]
+
+[ext_resource type="Shader" uid="uid://bmx2535gm7s8j" path="res://shaders/stylized_planet.gdshader" id="1_m0n3j"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_m0n3j")
+shader_parameter/use_height_coloring = true
+shader_parameter/band_smoothness = 0.0010000000475
+shader_parameter/level_low = 0.3070000145825
+shader_parameter/level_mid = 0.53600002546
+shader_parameter/level_high = 0.5930000281675
+shader_parameter/color_deep = Color(0, 0.7411765, 1, 1)
+shader_parameter/color_low = Color(6.0644747e-06, 0.92283076, 0, 1)
+shader_parameter/color_mid = Color(8.615404e-06, 0.7591738, 3.85046e-07, 1)
+shader_parameter/color_high = Color(0.92156863, 0.9098039, 0.9411765, 1)
+shader_parameter/albedo_color = Color(0, 1, 0, 1)
+shader_parameter/step_smoothness = 0.0
+shader_parameter/shadow_darkness = 0.7500000111759
+shader_parameter/use_texture = false
+shader_parameter/stripe_color = Color(0.1, 0.15, 0.12, 1)
+shader_parameter/stripe_width = 0.41700001910898
+shader_parameter/stripe_angle = 3.8350001821625
+shader_parameter/stripe_scale = 50.0
+shader_parameter/stripe_blend = 0.35000000521542
+shader_parameter/dot_scale = 42.32
+shader_parameter/dark_threshold = 0.2
+shader_parameter/max_dot_radius = 0.19
+shader_parameter/dot_color = Color(1, 1, 1, 1)

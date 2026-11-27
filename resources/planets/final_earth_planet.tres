@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="PlanetSettings" format=3 uid="uid://q658g0xer0kg"]
+
+[ext_resource type="Script" uid="uid://d0ealap6bma6p" path="res://resources/planets/planet_settings.gd" id="1_ugmb4"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ganh1"]
+seed = 3
+frequency = 0.0399
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_obmuu"]
+noise_type = 3
+frequency = 0.0135
+
+[resource]
+script = ExtResource("1_ugmb4")
+radius = 1.0
+resolution = 120
+mountain_height = 0.08
+mountain_exponent = 1.0
+terrain_noise = SubResource("FastNoiseLite_obmuu")
+continent_mask = SubResource("FastNoiseLite_ganh1")
+mask_sharpness = 0.1
+metadata/_custom_type_script = "uid://d0ealap6bma6p"

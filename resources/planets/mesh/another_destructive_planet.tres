@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="PlanetSettings" format=3 uid="uid://bsrxg8ydf7nt6"]
+
+[ext_resource type="Script" uid="uid://d0ealap6bma6p" path="res://resources/planets/planet_settings.gd" id="1_xx5pe"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ubwgw"]
+frequency = 0.0011
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_vkq25"]
+frequency = 0.0132
+
+[resource]
+script = ExtResource("1_xx5pe")
+radius = 3.0
+mountain_height = 4.0
+terrain_noise = SubResource("FastNoiseLite_vkq25")
+continent_mask = SubResource("FastNoiseLite_ubwgw")
+metadata/_custom_type_script = "uid://d0ealap6bma6p"

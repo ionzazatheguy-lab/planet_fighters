@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PlanetSettings" format=3 uid="uid://x438fytvp8c1"]
+[gd_resource type="Resource" script_class="PlanetSettings" format=3 uid="uid://dwgbi1o6igli4"]
 
 [ext_resource type="Script" uid="uid://d0ealap6bma6p" path="res://resources/planets/planet_settings.gd" id="1_ugmb4"]
 

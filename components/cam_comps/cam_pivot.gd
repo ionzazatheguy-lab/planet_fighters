@@ -1,5 +1,5 @@
 extends Node3D
-@export var cam_distance:float = 35
+@export var cam_distance:float
 @export var mouse_sensitivity := 0.003
 @export var max_zoom_in := 2.0  # minimal distance (closest)
 @export var max_zoom_out := 10.0  # maximal distance (farthest)
@@ -16,7 +16,7 @@ func _ready():
 	_clamp_zoom()
 
 func _clamp_zoom():
-	zoom_dist = clamp(zoom_dist, max_zoom_in, max_zoom_out)
+	zoom_dist = clamp(zoom_dist,(max_zoom_in),(max_zoom_out))
 	var t = cam.transform
 	t.origin.z = -zoom_dist
 	cam.transform = t
